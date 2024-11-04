@@ -1,6 +1,8 @@
 ﻿// See https://aka.ms/new-console-template for more information
 Console.WriteLine("Learn your squares and cubes!");
 
+// I am using method for user Prompt
+
 do
 {
     string userInput = GetUserInput("Please Enter an integer and see the exponents table.  ");
@@ -21,6 +23,7 @@ do
     }
 } while(TryAgain());
 
+// Method for user Prompt
  static string GetUserInput(string message)
 {
     Console.Write(message);
@@ -42,6 +45,7 @@ static int CubeNum(int num)
 //    return Math.Round(Math.Sqrt(num), 2);
 //}
 
+//Method to continue or not
 static bool TryAgain()
 {
     Console.Write("Would you like to continue y/n: ");
